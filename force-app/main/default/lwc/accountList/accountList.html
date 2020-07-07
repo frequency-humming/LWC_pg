@@ -1,13 +1,18 @@
 <template>
-    <lightning-card>
-        <template if:true={accounts.data}>
-            <lightning-datatable
-                key-field="Id"
-                data={accounts.data}
-                columns={columns}
-                editable=true
-            >
-           </lightning-datatable>
+    <lightning-card title="Data Table with Pagination">
+        <template if:true={showTable}>
+            <c-pagination-search records={accts} 
+                        total-records={accts.length} 
+                        show-search-box="true" 
+                        onpaginatorchange={handlePaginatorChange}>
+            </c-pagination-search>
+            <lightning-datatable key-field="Id" 
+                                data={recordsToDisplay} 
+                                columns={columns}
+                                hide-checkbox-column
+                                show-row-number-column
+                                row-number-offset={rowNumberOffset}>
+            </lightning-datatable>
         </template>
     </lightning-card>
 </template>

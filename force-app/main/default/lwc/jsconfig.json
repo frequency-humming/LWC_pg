@@ -17,6 +17,9 @@
             ],
             "c/paginator": [
                 "paginator/paginator.js"
+            ],
+            "c/paginationSearch": [
+                "paginationSearch/paginationSearch.js"
             ]
         }
     },
