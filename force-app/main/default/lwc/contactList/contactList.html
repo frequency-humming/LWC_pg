@@ -16,5 +16,8 @@
                      Page {page} of {totalPage}. </p>
             <c-paginator onprevious={previousHandler} onnext={nextHandler}></c-paginator>
         </div>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
     </lightning-card>
 </template>
