@@ -41,5 +41,10 @@ export default class AccountList extends LightningElement {
         this.recordsToDisplay = event.detail;
         this.rowNumberOffset = this.recordsToDisplay[0].rowNumber-1;
     }
+    //get errors 
+    /*get errors() {
+        return (this.accounts.error) ?
+            reduceErrors(this.accounts.error) : [];
+    }*/
 
 }

@@ -6,20 +6,26 @@
             "c/accountCreator": [
                 "accountCreator/accountCreator.js"
             ],
-            "c/contactCreator": [
-                "contactCreator/contactCreator.js"
-            ],
             "c/accountList": [
                 "accountList/accountList.js"
+            ],
+            "c/contactCreator": [
+                "contactCreator/contactCreator.js"
             ],
             "c/contactList": [
                 "contactList/contactList.js"
             ],
-            "c/paginator": [
-                "paginator/paginator.js"
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
             ],
             "c/paginationSearch": [
                 "paginationSearch/paginationSearch.js"
+            ],
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/opportunityCreation": [
+                "opportunityCreation/opportunityCreation.js"
             ]
         }
     },
