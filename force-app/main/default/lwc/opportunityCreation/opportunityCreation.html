@@ -1,28 +1,27 @@
 <template>
     <lightning-card title="Tell us about your business" icon-name="custom:custom63">
 
-
         <p class="slds-p-horizontal_small">
-        <template if:false={thank}>
-        <lightning-input label="Business Name" name="name" type="string"
-        value={name} onchange={handledChange}></lightning-input>
-        </br>
-        <lightning-textarea label="Description" name="description" type="String"
-        value={description} onchange={handledChange}></lightning-textarea>
-        </br>
-        <lightning-input label="Contact First Name" name="contactFirstName" type="string"
-        value={contactFirstName} onchange={handledChange}></lightning-input>
-        </br>
-        <lightning-input label="Contact Last Name" name="contactLastName" type="string"
-        value={contactLastName} onchange={handledChange}></lightning-input>
-        </br>
-        <lightning-input label="Contact Email" name="contactEmail" type="string"
-        value={contactEmail} onchange={handledChange}></lightning-input>
-  
-        <lightning-button label="Submit" onclick={handleClick}></lightning-button>
-        </template>
-        <template if:true={thank}>
-            <h3>Thank you for your time</h3>
+            <template if:false={thank}>
+                <lightning-input label="Business Name" name="name" type="string"
+                value={name} onchange={handledChange}></lightning-input>
+                </br>
+                <lightning-textarea label="Description" name="description" type="String"
+                value={description} onchange={handledChange}></lightning-textarea>
+                </br>
+                <lightning-input label="Contact First Name" name="contactFirstName" type="string"
+                value={contactFirstName} onchange={handledChange}></lightning-input>
+                </br>
+                <lightning-input label="Contact Last Name" name="contactLastName" type="string"
+                value={contactLastName} onchange={handledChange}></lightning-input>
+                </br>
+                <lightning-input label="Contact Email" name="contactEmail" type="string"
+                value={contactEmail} onchange={handledChange}></lightning-input>
+                </br>
+                <lightning-button label="Submit" onclick={handleButtonClick}></lightning-button>
+            </template>
+            <template if:true={thank}>
+                <h3>Thank you for your time, we'll be in contact soon.</h3>
             </template>
         </p>
         
