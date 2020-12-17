@@ -33,7 +33,7 @@ export default class PaginationSearch extends LightningElement {
         this.controlPagination = this.showPagination === false ? hideIt : showIt;
         this.setRecordsToDisplay();
     }
-
+    //comment for update
     handleRecordsPerPage(event){
         this.pageSize = event.target.value;
         this.setRecordsToDisplay();
